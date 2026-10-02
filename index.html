@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Navratri Utsav 2026 | New Indira Colony</title>
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color"
+      content="#5a1717">
+
+<title>
+Navratri Utsav 2026 | New Indira Colony, Burhanpur
+</title>
+
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* =========================================================
+   NAVRATRI UTSAV 2026
+   NEW INDIRA COLONY - BURHANPUR
+   COMPLETE SINGLE FILE WEBSITE
+========================================================= */
+
+
+/* =========================================================
+   BASIC
+========================================================= */
+
+:root{
+
+    --maroon:#581717;
+    --dark-maroon:#300909;
+
+    --saffron:#d95620;
+    --orange:#e97825;
+
+    --gold:#c8953b;
+    --light-gold:#e5bd72;
+
+    --cream:#fffaf1;
+    --cream-dark:#f5ead9;
+
+    --text:#381818;
+    --muted:#75635c;
+
+    --white:#ffffff;
+
+    --shadow:
+    0 15px 50px rgba(73,30,14,.12);
+}
+
 
 *{
     margin:0;
@@ -15,636 +69,2539 @@
     box-sizing:border-box;
 }
 
-:root{
-    --primary:#ff7a00;
-    --secondary:#ffd166;
-    --dark:#170707;
-    --cream:#fff8ec;
-    --glass:rgba(255,255,255,.10);
+
+html{
+    scroll-behavior:smooth;
 }
 
+
 body{
-    font-family:'Poppins',sans-serif;
-    background:
-        radial-gradient(circle at 20% 10%,rgba(255,126,0,.20),transparent 30%),
-        radial-gradient(circle at 80% 30%,rgba(255,215,0,.15),transparent 30%),
-        #160707;
-    color:white;
-    min-height:100vh;
+
+    font-family:
+    "DM Sans",
+    sans-serif;
+
+    color:var(--text);
+
+    background:var(--cream);
+
     overflow-x:hidden;
 }
 
-/* Floating particles */
 
-.particles{
-    position:fixed;
-    inset:0;
-    pointer-events:none;
-    z-index:0;
+button,
+input,
+select{
+    font-family:inherit;
 }
 
-.particle{
-    position:absolute;
-    width:5px;
-    height:5px;
-    background:#ffd166;
-    border-radius:50%;
-    opacity:.6;
-    animation:float 8s infinite ease-in-out;
-}
 
-@keyframes float{
-    0%,100%{
-        transform:translateY(0) scale(1);
-        opacity:.2;
-    }
-    50%{
-        transform:translateY(-80px) scale(1.4);
-        opacity:.8;
-    }
-}
-
-/* Header */
-
-header{
-    position:relative;
-    z-index:2;
-    padding:25px 7%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.logo{
-    font-family:'Playfair Display',serif;
-    font-size:25px;
-    font-weight:800;
-    color:#ffd166;
-}
-
-.logo span{
-    display:block;
-    font-family:Poppins;
-    font-size:10px;
-    letter-spacing:3px;
-    color:white;
-}
-
-/* Hero */
-
-.hero{
-    position:relative;
-    z-index:1;
-    min-height:85vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:50px 20px;
-}
-
-.mandala{
-    position:absolute;
-    width:500px;
-    height:500px;
-    border:1px solid rgba(255,209,102,.25);
-    border-radius:50%;
-    animation:rotate 35s linear infinite;
-}
-
-.mandala:before,
-.mandala:after{
-    content:"";
-    position:absolute;
-    inset:45px;
-    border:1px solid rgba(255,209,102,.2);
-    border-radius:50%;
-}
-
-.mandala:after{
-    inset:100px;
-}
-
-@keyframes rotate{
-    to{transform:rotate(360deg);}
-}
-
-.hero-content{
-    max-width:850px;
-    position:relative;
-    z-index:2;
-}
-
-.badge{
-    display:inline-block;
-    padding:9px 18px;
-    border-radius:30px;
-    background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,209,102,.35);
-    color:#ffd166;
-    font-size:13px;
-    letter-spacing:2px;
-    margin-bottom:20px;
-}
-
-h1{
-    font-family:'Playfair Display',serif;
-    font-size:clamp(50px,9vw,100px);
-    line-height:.95;
-    background:linear-gradient(90deg,#fff,#ffd166,#ff8c00,#fff);
-    background-size:250%;
-    -webkit-background-clip:text;
-    color:transparent;
-    animation:shine 5s linear infinite;
-}
-
-@keyframes shine{
-    to{background-position:250%;}
-}
-
-.hero p{
-    margin:25px auto;
-    max-width:650px;
-    color:#eadbd1;
-    font-size:16px;
-    line-height:1.8;
-}
-
-.location{
-    color:#ffd166;
-    font-weight:600;
-}
-
-/* Buttons */
-
-.btn{
-    border:none;
-    padding:15px 28px;
-    border-radius:50px;
-    font-family:Poppins;
-    font-weight:700;
+button{
     cursor:pointer;
+}
+
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar{
+
+    height:78px;
+
+    padding:0 6%;
+
+    background:
+    rgba(255,250,241,.96);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    border-bottom:
+    1px solid #eadcca;
+
+    backdrop-filter:blur(12px);
+}
+
+
+.brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+}
+
+
+.brand-symbol{
+
+    width:43px;
+    height:43px;
+
+    display:grid;
+
+    place-items:center;
+
+    border:1px solid var(--gold);
+
+    border-radius:50%;
+
+    color:var(--gold);
+
+    font-size:24px;
+}
+
+
+.brand-title{
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-size:23px;
+
+    font-weight:700;
+
+    color:var(--maroon);
+}
+
+
+.brand-location{
+
+    font-size:10px;
+
+    letter-spacing:.5px;
+
+    color:#806b60;
+}
+
+
+.desktop-nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:28px;
+}
+
+
+.desktop-nav a{
+
+    color:var(--text);
+
+    text-decoration:none;
+
+    font-size:13px;
+
+    transition:.25s;
+}
+
+
+.desktop-nav a:hover{
+    color:var(--saffron);
+}
+
+
+.desktop-nav button{
+
+    border:none;
+
+    background:var(--saffron);
+
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
     transition:.3s;
 }
 
-.btn-primary{
-    background:linear-gradient(135deg,#ff8a00,#ff4d00);
-    color:white;
-    box-shadow:0 10px 30px rgba(255,85,0,.3);
+
+.desktop-nav button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 8px 20px rgba(217,86,32,.25);
 }
 
-.btn-primary:hover{
-    transform:translateY(-3px);
-    box-shadow:0 15px 35px rgba(255,85,0,.5);
+
+.mobile-menu{
+
+    display:none;
+
+    border:none;
+
+    background:none;
+
+    color:var(--maroon);
+
+    font-size:27px;
 }
 
-.btn-outline{
-    background:transparent;
-    border:1px solid rgba(255,255,255,.3);
-    color:white;
-    margin-left:8px;
+
+/* =========================================================
+   MOBILE NAV
+========================================================= */
+
+.mobile-nav{
+
+    display:none;
+
+    position:fixed;
+
+    top:78px;
+
+    left:0;
+    right:0;
+
+    z-index:999;
+
+    padding:25px;
+
+    background:var(--cream);
+
+    box-shadow:var(--shadow);
 }
 
-/* Sections */
 
-section{
-    position:relative;
-    z-index:2;
-    padding:90px 7%;
-}
+.mobile-nav.active{
 
-.section-title{
-    text-align:center;
-    margin-bottom:50px;
-}
-
-.section-title h2{
-    font-family:'Playfair Display',serif;
-    font-size:45px;
-}
-
-.section-title p{
-    color:#cdbeb6;
-    margin-top:10px;
-}
-
-/* Days */
-
-.days{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-    max-width:1100px;
-    margin:auto;
-}
-
-.day-card{
-    padding:28px;
-    border-radius:25px;
-    background:rgba(255,255,255,.06);
-    border:1px solid rgba(255,255,255,.1);
-    backdrop-filter:blur(15px);
-    cursor:pointer;
-    transition:.35s;
-    position:relative;
-    overflow:hidden;
-}
-
-.day-card:hover{
-    transform:translateY(-8px);
-    border-color:var(--day-color);
-    box-shadow:0 15px 40px rgba(0,0,0,.25);
-}
-
-.color-circle{
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    background:var(--day-color);
-    box-shadow:0 0 30px var(--day-color);
-    margin-bottom:20px;
-}
-
-.day-number{
-    color:#aaa;
-    font-size:13px;
-    letter-spacing:2px;
-}
-
-.day-card h3{
-    margin:7px 0;
-}
-
-.day-card .date{
-    color:#cfc1ba;
-    font-size:13px;
-}
-
-/* Pass section */
-
-.pass-section{
-    background:rgba(255,255,255,.025);
-}
-
-.pass-container{
-    max-width:1100px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-}
-
-.pass-card{
-    background:rgba(255,255,255,.07);
-    border:1px solid rgba(255,255,255,.12);
-    border-radius:30px;
-    padding:35px;
-    backdrop-filter:blur(15px);
-}
-
-.pass-card h3{
-    font-family:'Playfair Display',serif;
-    font-size:30px;
-}
-
-.price{
-    font-size:45px;
-    font-weight:700;
-    color:#ffd166;
-    margin:15px 0;
-}
-
-.pass-card ul{
-    list-style:none;
-    color:#d8cac2;
-    line-height:2;
-}
-
-.pass-card li::before{
-    content:"✓";
-    color:#ffd166;
-    margin-right:10px;
-}
-
-/* Form */
-
-.form-container{
-    max-width:700px;
-    margin:auto;
-}
-
-.form-box{
-    background:rgba(255,255,255,.07);
-    border:1px solid rgba(255,255,255,.12);
-    border-radius:30px;
-    padding:35px;
-    backdrop-filter:blur(20px);
-}
-
-label{
-    display:block;
-    font-size:13px;
-    color:#d9ccc5;
-    margin:15px 0 7px;
-}
-
-input,select{
-    width:100%;
-    padding:15px;
-    border-radius:12px;
-    border:1px solid rgba(255,255,255,.15);
-    background:rgba(0,0,0,.25);
-    color:white;
-    outline:none;
-    font-family:Poppins;
-}
-
-select option{
-    color:black;
-}
-
-input:focus,
-select:focus{
-    border-color:#ff8a00;
-}
-
-.form-row{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:15px;
-}
-
-.total{
-    margin:25px 0;
-    padding:20px;
-    border-radius:15px;
-    background:rgba(255,255,255,.06);
     display:flex;
-    justify-content:space-between;
+
+    flex-direction:column;
+
+    gap:20px;
+}
+
+
+.mobile-nav a{
+
+    color:var(--maroon);
+
+    text-decoration:none;
+
+    font-weight:600;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+
+    min-height:680px;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    color:white;
+}
+
+
+/*
+   CHANGE THIS URL TO YOUR OWN MAA DURGA PHOTO
+*/
+
+.hero-image{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:url(
+    "https://images.unsplash.com/photo-1605640840605-14ac1855827b?auto=format&fit=crop&w=2200&q=90"
+    );
+
+    background-size:cover;
+
+    background-position:center 30%;
+
+    transform:scale(1.04);
+
+    animation:
+    heroZoom 12s ease-in-out infinite alternate;
+}
+
+
+@keyframes heroZoom{
+
+    from{
+        transform:scale(1.04);
+    }
+
+    to{
+        transform:scale(1.10);
+    }
+
+}
+
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(35,8,7,.88),
+        rgba(53,12,8,.48),
+        rgba(35,8,7,.82)
+    );
+}
+
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+    padding:40px 20px;
+
+    animation:
+    heroAppear 1s ease;
+}
+
+
+@keyframes heroAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+
+    }
+
+}
+
+
+.sanskrit{
+
+    color:#f4d597;
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-size:20px;
+
+    letter-spacing:1px;
+}
+
+
+.hero-line{
+
+    width:80px;
+
+    height:1px;
+
+    background:var(--light-gold);
+
+    margin:20px auto;
+}
+
+
+.hero h1{
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-size:
+    clamp(62px,9vw,110px);
+
+    line-height:.75;
+
+    font-weight:600;
+
+    margin-bottom:28px;
+
+    text-shadow:
+    0 5px 30px rgba(0,0,0,.3);
+}
+
+
+.hero h1 span{
+
+    display:block;
+
+    font-size:.65em;
+
+    margin-top:22px;
+
+    color:#eac67e;
+}
+
+
+.hero-location{
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-size:26px;
+}
+
+
+.hero-meta{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin:25px 0;
+
+    flex-wrap:wrap;
+}
+
+
+.hero-meta i{
+    color:#e6bd72;
+}
+
+
+.hero-button{
+
+    border:none;
+
+    padding:15px 30px;
+
+    border-radius:30px;
+
+    background:#f3d08a;
+
+    color:var(--maroon);
+
+    font-weight:700;
+
+    transition:.3s;
+}
+
+
+.hero-button span{
+
+    margin-left:15px;
+}
+
+
+.hero-button:hover{
+
+    transform:translateY(-3px);
+
+    background:white;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.25);
+}
+
+
+.scroll-indicator{
+
+    position:absolute;
+
+    bottom:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:2;
+
+    font-size:10px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    opacity:.8;
+}
+
+
+.scroll-indicator span{
+
+    display:block;
+
+    color:#e6bd72;
+
+    font-size:20px;
+
+    margin-top:5px;
+
+    animation:
+    bounce 1.5s infinite;
+}
+
+
+@keyframes bounce{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(7px);
+    }
+
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.section{
+
+    padding:100px 7%;
+}
+
+
+.section-heading{
+
+    text-align:center;
+
+    max-width:760px;
+
+    margin:0 auto 55px;
+}
+
+
+.small-title{
+
+    display:block;
+
+    color:var(--gold);
+
+    font-size:11px;
+
+    letter-spacing:3px;
+
+    font-weight:700;
+
+    margin-bottom:13px;
+}
+
+
+.section-heading h2{
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-size:
+    clamp(42px,5vw,62px);
+
+    line-height:1;
+}
+
+
+.section-heading h2 em{
+
+    color:var(--saffron);
+
+    font-style:normal;
+}
+
+
+.section-heading p{
+
+    margin-top:20px;
+
+    color:var(--muted);
+
+    line-height:1.8;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.intro-grid{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    1.1fr .9fr;
+
+    gap:70px;
+
     align-items:center;
 }
 
-.total strong{
-    font-size:25px;
-    color:#ffd166;
-}
 
-/* Generated pass */
+.intro-image{
 
-#passResult{
-    display:none;
-    max-width:500px;
-    margin:50px auto 0;
-}
+    border-radius:
+    4px 60px 4px 60px;
 
-.generated-pass{
-    color:#111;
-    background:#ff7a00;
-    border-radius:25px;
     overflow:hidden;
-    box-shadow:0 25px 70px rgba(0,0,0,.4);
+
+    box-shadow:
+    0 20px 60px rgba(67,26,12,.16);
 }
 
-.pass-header{
-    padding:30px;
+
+.intro-image img{
+
+    width:100%;
+
+    height:450px;
+
+    object-fit:cover;
+}
+
+
+.intro-text{
+
+    padding:20px;
+}
+
+
+.om-symbol{
+
+    font-size:45px;
+
+    color:var(--gold);
+
+    margin-bottom:10px;
+}
+
+
+.intro-text h3{
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-size:43px;
+
+    color:var(--maroon);
+}
+
+
+.intro-text p{
+
+    margin:20px 0;
+
+    color:var(--muted);
+
+    line-height:1.9;
+}
+
+
+.quote{
+
+    border-left:
+    3px solid var(--gold);
+
+    padding-left:20px;
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-size:23px;
+
+    font-style:italic;
+
+    color:var(--maroon);
+}
+
+
+/* =========================================================
+   DAYS
+========================================================= */
+
+.days-section{
+
+    background:var(--cream-dark);
+
+    position:relative;
+}
+
+
+.days-section:before,
+.days-section:after{
+
+    content:"✦";
+
+    position:absolute;
+
+    color:rgba(201,149,59,.2);
+
+    font-size:120px;
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+}
+
+
+.days-section:before{
+
+    left:20px;
+
+    top:30px;
+}
+
+
+.days-section:after{
+
+    right:20px;
+
+    bottom:30px;
+}
+
+
+.days-grid{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(9,1fr);
+
+    gap:10px;
+
+    position:relative;
+
+    z-index:2;
+}
+
+
+.day-card{
+
+    background:
+    rgba(255,255,255,.88);
+
+    border:
+    1px solid #eadcca;
+
+    padding:17px 10px;
+
     text-align:center;
+
+    border-radius:
+    3px 3px 18px 18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+
+.day-card:before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+    right:0;
+
+    height:5px;
+
+    background:var(--day-color);
+}
+
+
+.day-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow);
+
+    background:white;
+}
+
+
+.day-color{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    margin:
+    10px auto 15px;
+
+    border:
+    2px solid rgba(0,0,0,.08);
+
+    box-shadow:
+    inset 0 0 0 2px rgba(255,255,255,.35);
+}
+
+
+.day-number{
+
+    font-size:10px;
+
+    color:#927d70;
+
+    letter-spacing:1px;
+}
+
+
+.day-card h3{
+
+    margin:6px 0;
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-size:21px;
+
+    color:var(--maroon);
+}
+
+
+.day-date{
+
+    font-size:10px;
+
+    color:#8b7770;
+}
+
+
+/* =========================================================
+   PASSES
+========================================================= */
+
+.passes-section{
+
+    background:#fffaf3;
+}
+
+
+.passes-grid{
+
+    max-width:950px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:25px;
+}
+
+
+.pass-option{
+
+    position:relative;
+
+    background:white;
+
+    border:
+    1px solid #eadcca;
+
+    padding:35px;
+
+    display:flex;
+
+    gap:25px;
+
+    border-radius:
+    5px 35px 5px 35px;
+
+    box-shadow:
+    0 10px 35px rgba(75,32,16,.07);
+
+    transition:.3s;
+}
+
+
+.pass-option:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:var(--shadow);
+}
+
+
+.pass-option.featured{
+
+    border:
+    2px solid #d8ad61;
+}
+
+
+.popular{
+
+    position:absolute;
+
+    top:0;
+
+    right:25px;
+
+    background:var(--maroon);
+
+    color:white;
+
+    padding:7px 13px;
+
+    font-size:9px;
+
+    letter-spacing:1px;
+
+    border-radius:
+    0 0 7px 7px;
+}
+
+
+.pass-icon{
+
+    width:55px;
+
+    height:55px;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    display:grid;
+
+    place-items:center;
+
+    background:#fff1db;
+
+    color:var(--saffron);
+
+    font-size:25px;
+}
+
+
+.pass-info h3{
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-size:31px;
+
+    color:var(--maroon);
+}
+
+
+.price{
+
+    color:var(--saffron);
+
+    font-size:35px;
+
+    font-weight:700;
+
+    margin:5px 0 15px;
+}
+
+
+.price small{
+
+    font-size:11px;
+
+    color:#8c7870;
+
+    font-weight:400;
+}
+
+
+.pass-info ul{
+
+    list-style:none;
+
+    color:#71605b;
+
+    font-size:13px;
+
+    line-height:2;
+}
+
+
+.pass-info button{
+
+    margin-top:20px;
+
+    padding:12px 22px;
+
+    border:none;
+
+    background:var(--saffron);
+
+    color:white;
+
+    border-radius:25px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+
+.pass-info button:hover{
+
+    background:var(--maroon);
+
+    transform:translateY(-2px);
+}
+
+
+.pass-info button span{
+
+    margin-left:15px;
+}
+
+
+/* =========================================================
+   MEMBERSHIP
+========================================================= */
+
+.membership{
+
+    background:var(--maroon);
+}
+
+
+.membership-card{
+
+    max-width:1050px;
+
+    margin:auto;
+
+    min-height:300px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    border:
+    1px solid rgba(255,255,255,.12);
+
+    display:flex;
+
+    align-items:center;
+
+    padding:60px;
+
+    background:
+    linear-gradient(
+        120deg,
+        #4b1010,
+        #681d17
+    );
+}
+
+
+.membership-content{
+
+    max-width:650px;
+
+    position:relative;
+
+    z-index:2;
+}
+
+
+.membership .small-title{
+
+    color:#dcb56a;
+}
+
+
+.membership h2{
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-size:60px;
+
     color:white;
 }
 
-.pass-header h2{
-    font-family:'Playfair Display',serif;
-    font-size:32px;
+
+.membership h2 em{
+
+    color:#e4b968;
+
+    font-style:normal;
 }
 
-.pass-body{
-    background:#fff;
-    padding:30px;
+
+.membership p{
+
+    color:#e8d7ca;
+
+    line-height:1.8;
+
+    margin:15px 0 25px;
 }
 
-.pass-info{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:20px;
-    margin-bottom:25px;
-}
 
-.info-label{
-    color:#777;
-    font-size:11px;
-    text-transform:uppercase;
-}
+.membership button{
 
-.info-value{
-    font-weight:700;
-    margin-top:3px;
-}
+    border:none;
 
-.pass-id{
-    background:#f2f2f2;
-    padding:12px;
-    text-align:center;
-    border-radius:10px;
-    margin-bottom:20px;
+    background:#e3ba6e;
+
+    color:var(--maroon);
+
+    padding:13px 24px;
+
+    border-radius:25px;
+
     font-weight:700;
 }
 
-.qr-placeholder{
-    width:130px;
-    height:130px;
+
+.membership-symbol{
+
+    position:absolute;
+
+    right:80px;
+
+    font-size:220px;
+
+    color:rgba(255,255,255,.04);
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+}
+
+
+/* =========================================================
+   BOOKING
+========================================================= */
+
+.booking{
+
+    background:var(--cream-dark);
+}
+
+
+.booking-grid{
+
+    max-width:1150px;
+
     margin:auto;
-    background:
-      repeating-linear-gradient(
-        45deg,
-        #111 0,
-        #111 3px,
-        #fff 3px,
-        #fff 6px
-      );
-    border:10px solid white;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:45px;
+
+    align-items:start;
 }
 
-.pass-footer{
-    background:#fafafa;
-    text-align:center;
+
+.booking-form{
+
+    background:white;
+
+    padding:35px;
+
+    border:
+    1px solid #eadcca;
+
+    border-radius:
+    5px 35px 5px 35px;
+
+    box-shadow:var(--shadow);
+}
+
+
+.booking-form label{
+
+    display:block;
+
+    margin:
+    18px 0 7px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    color:#634e48;
+}
+
+
+.input-wrapper{
+
+    display:flex;
+
+    align-items:center;
+
+    border:
+    1px solid #ddd0c1;
+
+    border-radius:8px;
+
+    padding:0 15px;
+
+    background:#fffdf8;
+}
+
+
+.input-wrapper span{
+
+    color:var(--gold);
+
+    margin-right:10px;
+}
+
+
+.input-wrapper input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    padding:14px 0;
+
+    background:transparent;
+
+    color:var(--text);
+}
+
+
+.pass-type-selector{
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:10px;
+}
+
+
+.radio-card{
+
+    margin:0 !important;
+
+    border:
+    1px solid #ddd0c1;
+
+    padding:13px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    background:#fffdf8;
+}
+
+
+.radio-card input{
+
+    margin-right:5px;
+}
+
+
+.radio-card span{
+
+    font-size:12px;
+}
+
+
+.radio-card strong{
+
+    display:block;
+
+    margin-left:19px;
+
+    color:var(--saffron);
+}
+
+
+select{
+
+    width:100%;
+
+    padding:14px;
+
+    border:
+    1px solid #ddd0c1;
+
+    border-radius:8px;
+
+    outline:none;
+
+    background:#fffdf8;
+
+    color:var(--text);
+}
+
+
+.amount-box{
+
+    margin:25px 0;
+
+    padding:18px;
+
+    background:#fff5e5;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    border-radius:8px;
+}
+
+
+.amount-box strong{
+
+    color:var(--saffron);
+
+    font-size:22px;
+}
+
+
+.generate-button{
+
+    width:100%;
+
+    border:none;
+
     padding:15px;
-    font-size:11px;
-    color:#777;
+
+    border-radius:8px;
+
+    background:var(--saffron);
+
+    color:white;
+
+    font-weight:700;
+
+    transition:.3s;
 }
 
-/* Footer */
+
+.generate-button:hover{
+
+    background:var(--maroon);
+
+    transform:translateY(-2px);
+}
+
+
+.generate-button span{
+
+    margin-left:15px;
+}
+
+
+/* =========================================================
+   DIGITAL PASS
+========================================================= */
+
+.pass-preview-container{
+
+    position:sticky;
+
+    top:110px;
+}
+
+
+.preview-title{
+
+    text-align:center;
+
+    font-size:10px;
+
+    letter-spacing:3px;
+
+    color:#957d70;
+
+    margin-bottom:15px;
+}
+
+
+.digital-pass{
+
+    background:white;
+
+    border-radius:
+    4px 25px 4px 25px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 25px 70px rgba(72,31,17,.18);
+
+    border:
+    1px solid #dfc59e;
+}
+
+
+.digital-pass-top{
+
+    background:var(--orange);
+
+    color:white;
+
+    padding:22px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    transition:
+    background .5s ease;
+}
+
+
+.pass-brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+}
+
+
+.pass-om{
+
+    font-size:30px;
+}
+
+
+.pass-brand strong{
+
+    display:block;
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-size:22px;
+}
+
+
+.pass-brand small{
+
+    display:block;
+
+    font-size:9px;
+}
+
+
+.entry-label{
+
+    border:
+    1px solid rgba(255,255,255,.6);
+
+    padding:7px 12px;
+
+    border-radius:20px;
+
+    font-size:10px;
+
+    letter-spacing:1px;
+}
+
+
+.digital-pass-body{
+
+    padding:25px;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 130px;
+
+    gap:20px;
+}
+
+
+.pass-details{
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:20px 15px;
+}
+
+
+.pass-details small{
+
+    display:block;
+
+    font-size:9px;
+
+    text-transform:uppercase;
+
+    color:#9b8981;
+
+    margin-bottom:3px;
+}
+
+
+.pass-details strong{
+
+    display:block;
+
+    font-size:12px;
+
+    color:var(--text);
+}
+
+
+.pass-qr{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-left:
+    1px dashed #d9c7b0;
+
+    padding-left:20px;
+}
+
+
+/* =========================================================
+   REALISTIC QR PLACEHOLDER
+========================================================= */
+
+.fake-qr{
+
+    width:105px;
+
+    height:105px;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #111 10px,
+        transparent 10px,
+        transparent 18px,
+        #111 18px,
+        #111 28px,
+        transparent 28px,
+        transparent 36px
+    ),
+
+    linear-gradient(
+        #111 10px,
+        transparent 10px,
+        transparent 18px,
+        #111 18px,
+        #111 28px,
+        transparent 28px,
+        transparent 36px
+    );
+
+    background-size:
+    36px 36px;
+
+    border:
+    8px solid white;
+
+    outline:
+    1px solid #ddd;
+
+    display:grid;
+
+    place-items:center;
+}
+
+
+.fake-qr span{
+
+    background:white;
+
+    padding:3px;
+
+    font-size:11px;
+
+    font-weight:700;
+}
+
+
+.pass-qr small{
+
+    margin-top:8px;
+
+    font-size:9px;
+
+    font-weight:700;
+}
+
+
+.pass-bottom{
+
+    padding:
+    12px 20px;
+
+    background:#fff7ea;
+
+    border-top:
+    1px solid #eadcca;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    font-size:10px;
+
+    color:#775d50;
+}
+
+
+.pass-actions{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:15px;
+}
+
+
+.pass-actions button{
+
+    flex:1;
+
+    padding:11px;
+
+    border:
+    1px solid #d8c7b6;
+
+    background:white;
+
+    border-radius:7px;
+
+    color:var(--maroon);
+
+    font-weight:600;
+}
+
+
+.pass-actions button:hover{
+
+    background:var(--maroon);
+
+    color:white;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
 
 footer{
-    padding:50px 20px;
-    text-align:center;
-    border-top:1px solid rgba(255,255,255,.1);
-    color:#aaa;
+
+    background:#290909;
+
+    color:#d7c5b9;
+
+    padding:35px 7%;
 }
 
-footer strong{
-    color:#ffd166;
+
+.footer-inner{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    font-size:11px;
 }
 
-/* Responsive */
 
-@media(max-width:800px){
+.footer-title{
 
-    header{
-        padding:20px;
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-size:25px;
+
+    color:#e4bc70;
+}
+
+
+.footer-mantra{
+
+    color:#e4bc70;
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-size:20px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:1050px){
+
+    .days-grid{
+
+        grid-template-columns:
+        repeat(3,1fr);
+
     }
 
-    .days{
+}
+
+
+@media(max-width:850px){
+
+    .desktop-nav{
+
+        display:none;
+
+    }
+
+
+    .mobile-menu{
+
+        display:block;
+
+    }
+
+
+    .intro-grid,
+    .booking-grid,
+    .passes-grid{
+
         grid-template-columns:1fr;
+
     }
 
-    .pass-container{
+
+    .pass-preview-container{
+
+        position:static;
+
+    }
+
+
+    .membership-symbol{
+
+        right:20px;
+
+        font-size:150px;
+
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .navbar{
+
+        padding:0 20px;
+
+    }
+
+
+    .brand-title{
+
+        font-size:19px;
+
+    }
+
+
+    .brand-location{
+
+        font-size:8px;
+
+    }
+
+
+    .hero{
+
+        min-height:650px;
+
+    }
+
+
+    .hero h1{
+
+        font-size:65px;
+
+    }
+
+
+    .hero-location{
+
+        font-size:20px;
+
+    }
+
+
+    .hero-meta{
+
+        gap:8px;
+
+    }
+
+
+    .section{
+
+        padding:
+        70px 20px;
+
+    }
+
+
+    .days-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+
+    .pass-option{
+
+        padding:25px;
+
+        flex-direction:column;
+
+    }
+
+
+    .membership-card{
+
+        padding:35px 25px;
+
+    }
+
+
+    .membership h2{
+
+        font-size:48px;
+
+    }
+
+
+    .pass-type-selector{
+
         grid-template-columns:1fr;
+
     }
 
-    section{
-        padding:70px 20px;
-    }
 
-    .form-row{
+    .digital-pass-body{
+
         grid-template-columns:1fr;
+
     }
 
-    .btn{
+
+    .pass-qr{
+
+        border-left:none;
+
+        border-top:
+        1px dashed #d9c7b0;
+
+        padding:
+        20px 0 0;
+
+    }
+
+
+    .footer-inner{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        text-align:center;
+
+    }
+
+}
+
+
+/* =========================================================
+   PRINT PASS
+========================================================= */
+
+@media print{
+
+    body *{
+
+        visibility:hidden;
+
+    }
+
+
+    #digitalPass,
+    #digitalPass *{
+
+        visibility:visible;
+
+    }
+
+
+    #digitalPass{
+
+        position:absolute;
+
+        left:0;
+
+        top:0;
+
         width:100%;
-        margin:5px 0;
+
+        box-shadow:none;
+
     }
 
-    .btn-outline{
-        margin-left:0;
-    }
-
-    .mandala{
-        width:320px;
-        height:320px;
-    }
 }
+
 </style>
+
 </head>
+
+
 
 <body>
 
-<div class="particles" id="particles"></div>
 
-<header>
-    <div class="logo">
-        NAVRATRI UTSAV
-        <span>NEW INDIRA COLONY • BURHANPUR</span>
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="brand">
+
+        <div class="brand-symbol">
+            ॐ
+        </div>
+
+        <div>
+
+            <div class="brand-title">
+                Navratri Utsav 2026
+            </div>
+
+            <div class="brand-location">
+                New Indira Colony, Burhanpur (M.P.)
+            </div>
+
+        </div>
+
     </div>
+
+
+    <nav class="desktop-nav">
+
+        <a href="#home">
+            Home
+        </a>
+
+        <a href="#days">
+            9 Days
+        </a>
+
+        <a href="#passes">
+            Passes
+        </a>
+
+        <a href="#membership">
+            Membership
+        </a>
+
+        <a href="#booking">
+            Register
+        </a>
+
+        <button onclick="goToBooking()">
+            Get Your Pass
+        </button>
+
+    </nav>
+
+
+    <button class="mobile-menu"
+            onclick="toggleMenu()">
+
+        ☰
+
+    </button>
+
 </header>
+
+
+<div id="mobileNav"
+     class="mobile-nav">
+
+    <a href="#home"
+       onclick="toggleMenu()">
+        Home
+    </a>
+
+    <a href="#days"
+       onclick="toggleMenu()">
+        9 Days
+    </a>
+
+    <a href="#passes"
+       onclick="toggleMenu()">
+        Passes
+    </a>
+
+    <a href="#membership"
+       onclick="toggleMenu()">
+        Membership
+    </a>
+
+    <a href="#booking"
+       onclick="toggleMenu()">
+        Get Your Pass
+    </a>
+
+</div>
+
+
 
 <main>
 
-<section class="hero">
 
-    <div class="mandala"></div>
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section id="home"
+         class="hero">
+
+    <div class="hero-image"></div>
+
+    <div class="hero-overlay"></div>
+
 
     <div class="hero-content">
 
-        <div class="badge">
-            ✦ NAVRATRI UTSAV 2026 ✦
+        <div class="sanskrit">
+
+            ॥ या देवी सर्वभूतेषु
+            शक्तिरूपेण संस्थिता ॥
+
         </div>
 
-        <h1>Navratri<br>Mahotsav</h1>
 
-        <p>
-            नौ रातें • भक्ति • गरबा • उत्सव
-            <br>
-            Celebrate the divine spirit of Navratri together
-            with the community of New Indira Colony.
+        <div class="hero-line"></div>
+
+
+        <h1>
+
+            Navratri Utsav
+
+            <span>
+                2026
+            </span>
+
+        </h1>
+
+
+        <p class="hero-location">
+
+            New Indira Colony,
+            Burhanpur (M.P.)
+
         </p>
 
-        <div class="location">
-            📍 New Indira Colony, Burhanpur, Madhya Pradesh
+
+        <div class="hero-meta">
+
+            <span>
+                9 Days
+            </span>
+
+            <i>•</i>
+
+            <span>
+                9 Divine Colors
+            </span>
+
+            <i>•</i>
+
+            <span>
+                One Divine Energy
+            </span>
+
         </div>
 
-        <br>
 
-        <button class="btn btn-primary"
-                onclick="scrollToSection('booking')">
-            🎟️ Get Your Pass
+        <button class="hero-button"
+                onclick="goToBooking()">
+
+            🎟 Get Your Pass
+
+            <span>
+                →
+            </span>
+
         </button>
 
-        <button class="btn btn-outline"
-                onclick="scrollToSection('days')">
-            View 9 Days
-        </button>
+    </div>
+
+
+    <div class="scroll-indicator">
+
+        Scroll to explore
+
+        <span>
+            ↓
+        </span>
 
     </div>
 
 </section>
 
 
-<!-- DAYS -->
 
-<section id="days">
+<!-- =====================================================
+     INTRO
+===================================================== -->
 
-    <div class="section-title">
-        <h2>9 Days • 9 Colors</h2>
-        <p>Select your day and celebrate in its special color.</p>
+<section class="intro section">
+
+    <div class="section-heading">
+
+        <span class="small-title">
+            SHUBH NAVRATRI
+        </span>
+
+        <h2>
+
+            Nine Days of
+
+            <em>
+                Divine Celebration
+            </em>
+
+        </h2>
+
+        <p>
+
+            Join the community of New Indira Colony
+            as we come together for nine beautiful
+            nights of devotion, celebration and togetherness.
+
+        </p>
+
     </div>
 
-    <div class="days" id="daysContainer"></div>
+
+    <div class="intro-grid">
+
+
+        <div class="intro-image">
+
+            <!-- CHANGE THIS IMAGE TO YOUR REAL PHOTO -->
+
+            <img
+            src="https://images.unsplash.com/photo-1604608672516-f1b9f7f2d6a0?auto=format&fit=crop&w=1200&q=85"
+            alt="Navratri celebration">
+
+        </div>
+
+
+        <div class="intro-text">
+
+            <div class="om-symbol">
+                ॐ
+            </div>
+
+            <h3>
+                Maa Durga's Blessings
+            </h3>
+
+            <p>
+
+                Every evening is an opportunity
+                to celebrate faith, culture and
+                community.
+
+                Come with your family and friends
+                and become a part of our
+                Navratri Utsav.
+
+            </p>
+
+
+            <div class="quote">
+
+                "May Maa Durga fill your life
+                with happiness, prosperity
+                and success."
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
 
-<!-- PASS TYPES -->
 
-<section class="pass-section">
+<!-- =====================================================
+     9 DAYS / COLORS
+===================================================== -->
 
-    <div class="section-title">
-        <h2>Choose Your Pass</h2>
-        <p>Simple. Digital. Festive.</p>
+<section id="days"
+         class="days-section section">
+
+    <div class="section-heading">
+
+        <span class="small-title">
+            NAVRATRI 2026
+        </span>
+
+        <h2>
+
+            9 Days
+
+            <em>
+                •
+            </em>
+
+            9 Divine Colors
+
+        </h2>
+
+        <p>
+
+            Each day brings a new energy,
+            a new color and a new blessing.
+
+        </p>
+
     </div>
 
-    <div class="pass-container">
 
-        <div class="pass-card">
+    <div id="daysGrid"
+         class="days-grid">
 
-            <h3>Daily Pass</h3>
+    </div>
 
-            <div class="price">₹200</div>
+</section>
 
-            <ul>
-                <li>Valid for selected day</li>
-                <li>Choose any Day 1–9</li>
-                <li>Personalized digital pass</li>
-                <li>Day-specific pass color</li>
-            </ul>
 
-            <br>
 
-            <button class="btn btn-primary"
-                    onclick="selectPass('daily')">
-                Get Daily Pass
+<!-- =====================================================
+     PASSES
+===================================================== -->
+
+<section id="passes"
+         class="passes-section section">
+
+    <div class="section-heading">
+
+        <span class="small-title">
+            ENTRY PASSES
+        </span>
+
+        <h2>
+
+            Choose Your
+
+            <em>
+                Pass
+            </em>
+
+        </h2>
+
+        <p>
+
+            Easy booking • Secure payment • Digital pass
+
+        </p>
+
+    </div>
+
+
+    <div class="passes-grid">
+
+
+        <!-- DAILY PASS -->
+
+        <div class="pass-option">
+
+            <div class="pass-icon">
+                🎟
+            </div>
+
+
+            <div class="pass-info">
+
+                <h3>
+                    Daily Pass
+                </h3>
+
+
+                <div class="price">
+
+                    ₹200
+
+                    <small>
+                        / person
+                    </small>
+
+                </div>
+
+
+                <ul>
+
+                    <li>
+                        ✓ Valid for selected day
+                    </li>
+
+                    <li>
+                        ✓ Choose any Day 1–9
+                    </li>
+
+                    <li>
+                        ✓ Personalized digital pass
+                    </li>
+
+                    <li>
+                        ✓ Day-specific color
+                    </li>
+
+                </ul>
+
+
+                <button onclick="chooseDailyPass()">
+
+                    Get Daily Pass
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- 9 DAY PASS -->
+
+        <div class="pass-option featured">
+
+            <div class="popular">
+                MOST CONVENIENT
+            </div>
+
+
+            <div class="pass-icon">
+                ✨
+            </div>
+
+
+            <div class="pass-info">
+
+                <h3>
+                    9-Day Pass
+                </h3>
+
+
+                <div class="price">
+
+                    ₹1,000
+
+                    <small>
+                        / person
+                    </small>
+
+                </div>
+
+
+                <ul>
+
+                    <li>
+                        ✓ Valid for all 9 days
+                    </li>
+
+                    <li>
+                        ✓ One registration
+                    </li>
+
+                    <li>
+                        ✓ Personalized digital pass
+                    </li>
+
+                    <li>
+                        ✓ Special 9-day access
+                    </li>
+
+                </ul>
+
+
+                <button onclick="chooseNineDayPass()">
+
+                    Get 9-Day Pass
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MEMBERSHIP
+===================================================== -->
+
+<section id="membership"
+         class="membership section">
+
+    <div class="membership-card">
+
+        <div class="membership-content">
+
+            <span class="small-title">
+
+                BECOME A PART OF THE COMMUNITY
+
+            </span>
+
+
+            <h2>
+
+                Become a
+
+                <em>
+                    Member
+                </em>
+
+            </h2>
+
+
+            <p>
+
+                Support our Navratri Utsav and
+                become a part of the community
+                that makes this celebration possible.
+
+            </p>
+
+
+            <button onclick="goToBooking()">
+
+                Become a Member →
+
             </button>
 
         </div>
 
 
-        <div class="pass-card">
+        <div class="membership-symbol">
 
-            <h3>9-Day Pass</h3>
-
-            <div class="price">₹1,000</div>
-
-            <ul>
-                <li>Valid for all 9 days</li>
-                <li>One registration</li>
-                <li>Personalized digital pass</li>
-                <li>Premium 9-day access</li>
-            </ul>
-
-            <br>
-
-            <button class="btn btn-primary"
-                    onclick="selectPass('nine')">
-                Get 9-Day Pass
-            </button>
+            ॐ
 
         </div>
 
@@ -653,570 +2610,678 @@ footer strong{
 </section>
 
 
-<!-- BOOKING -->
 
-<section id="booking">
+<!-- =====================================================
+     BOOKING
+===================================================== -->
 
-    <div class="section-title">
-        <h2>Generate Your Pass</h2>
-        <p>Enter your details and create your digital Navratri pass.</p>
+<section id="booking"
+         class="booking section">
+
+
+    <div class="section-heading">
+
+        <span class="small-title">
+            DIGITAL PASS
+        </span>
+
+
+        <h2>
+
+            Register &
+
+            <em>
+                Generate Your Pass
+            </em>
+
+        </h2>
+
+
+        <p>
+
+            Enter your details and receive
+            your personalized Navratri entry pass.
+
+        </p>
+
     </div>
 
-    <div class="form-container">
 
-        <div class="form-box">
+
+    <div class="booking-grid">
+
+
+        <!-- =============================
+             REGISTRATION FORM
+        ============================== -->
+
+        <div class="booking-form">
 
             <form id="passForm">
 
-                <label>Full Name</label>
-                <input
+
+                <label>
+                    Full Name
+                </label>
+
+
+                <div class="input-wrapper">
+
+                    <span>
+                        ♙
+                    </span>
+
+
+                    <input
                     type="text"
                     id="name"
                     placeholder="Enter your full name"
-                    required
-                >
+                    required>
 
-                <label>Phone Number</label>
-                <input
+                </div>
+
+
+
+                <label>
+                    Phone Number
+                </label>
+
+
+                <div class="input-wrapper">
+
+                    <span>
+                        ☎
+                    </span>
+
+
+                    <input
                     type="tel"
                     id="phone"
-                    placeholder="10-digit mobile number"
                     maxlength="10"
-                    required
-                >
+                    placeholder="Enter 10 digit mobile number"
+                    required>
 
-                <label>Pass Type</label>
+                </div>
 
-                <select id="passType" onchange="updateBooking()">
-                    <option value="daily">Daily Pass — ₹200</option>
-                    <option value="nine">9-Day Pass — ₹1,000</option>
-                </select>
 
-                <div id="daySelection">
 
-                    <label>Select Day</label>
+                <label>
+                    Pass Type
+                </label>
 
-                    <select id="selectedDay"
-                            onchange="updateBooking()">
+
+                <div class="pass-type-selector">
+
+
+                    <label class="radio-card">
+
+                        <input
+                        type="radio"
+                        name="passType"
+                        value="daily"
+                        checked
+                        onchange="updateForm()">
+
+                        <span>
+
+                            Daily Pass
+
+                            <strong>
+                                ₹200
+                            </strong>
+
+                        </span>
+
+                    </label>
+
+
+
+                    <label class="radio-card">
+
+                        <input
+                        type="radio"
+                        name="passType"
+                        value="nine"
+                        onchange="updateForm()">
+
+                        <span>
+
+                            9-Day Pass
+
+                            <strong>
+                                ₹1,000
+                            </strong>
+
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+
+                <div id="dayField">
+
+                    <label>
+                        Select Day
+                    </label>
+
+
+                    <select id="selectedDay">
+
                     </select>
 
                 </div>
 
-                <div class="total">
-                    <span>Total Amount</span>
-                    <strong id="totalAmount">₹200</strong>
+
+
+                <div class="amount-box">
+
+                    <span>
+                        Total Amount
+                    </span>
+
+
+                    <strong id="totalAmount">
+
+                        ₹200
+
+                    </strong>
+
                 </div>
 
-                <button class="btn btn-primary"
-                        type="submit"
-                        style="width:100%;">
-                    ✨ Generate My Pass
+
+
+                <button
+                class="generate-button"
+                type="submit">
+
+                    🎟 Generate My Pass
+
+                    <span>
+                        →
+                    </span>
+
                 </button>
+
 
             </form>
 
         </div>
 
-    </div>
 
 
-    <!-- GENERATED PASS -->
+        <!-- =============================
+             DIGITAL PASS
+        ============================== -->
 
-    <div id="passResult">
+        <div class="pass-preview-container">
 
-        <div class="generated-pass" id="generatedPass">
 
-            <div class="pass-header" id="passHeader">
+            <div class="preview-title">
 
-                <div>✦ NAVRATRI UTSAV 2026 ✦</div>
-
-                <h2>ENTRY PASS</h2>
-
-                <div>
-                    NEW INDIRA COLONY • BURHANPUR
-                </div>
+                YOUR DIGITAL PASS
 
             </div>
 
-            <div class="pass-body">
 
-                <div class="pass-id">
-                    PASS ID:
-                    <span id="passId"></span>
-                </div>
+            <div id="digitalPass"
+                 class="digital-pass">
 
-                <div class="pass-info">
 
-                    <div>
-                        <div class="info-label">
-                            Name
+                <!-- PASS HEADER -->
+
+                <div id="passTop"
+                     class="digital-pass-top">
+
+
+                    <div class="pass-brand">
+
+
+                        <div class="pass-om">
+
+                            ॐ
+
                         </div>
 
-                        <div class="info-value"
-                             id="passName">
+
+                        <div>
+
+                            <strong>
+
+                                Navratri Utsav 2026
+
+                            </strong>
+
+
+                            <small>
+
+                                New Indira Colony,
+                                Burhanpur
+
+                            </small>
+
                         </div>
+
                     </div>
 
-                    <div>
-                        <div class="info-label">
-                            Phone
-                        </div>
 
-                        <div class="info-value"
-                             id="passPhone">
-                        </div>
-                    </div>
+                    <div class="entry-label">
 
-                    <div>
-                        <div class="info-label">
-                            Pass Type
-                        </div>
+                        ENTRY PASS
 
-                        <div class="info-value"
-                             id="passTypeDisplay">
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="info-label">
-                            Day
-                        </div>
-
-                        <div class="info-value"
-                             id="passDay">
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="info-label">
-                            Date
-                        </div>
-
-                        <div class="info-value"
-                             id="passDate">
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="info-label">
-                            Color
-                        </div>
-
-                        <div class="info-value"
-                             id="passColor">
-                        </div>
                     </div>
 
                 </div>
 
-                <div class="qr-placeholder"></div>
 
-                <br>
 
-                <div style="text-align:center;font-size:12px;">
-                    Please show this pass at the entry gate.
+                <!-- PASS BODY -->
+
+                <div class="digital-pass-body">
+
+
+                    <div class="pass-details">
+
+
+                        <div>
+
+                            <small>
+                                Name
+                            </small>
+
+                            <strong id="previewName">
+                                Your Name
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <small>
+                                Phone
+                            </small>
+
+                            <strong id="previewPhone">
+                                9876543210
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <small>
+                                Pass Type
+                            </small>
+
+                            <strong id="previewType">
+                                Daily Pass
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <small>
+                                Day
+                            </small>
+
+                            <strong id="previewDay">
+                                Day 1 - Orange
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <small>
+                                Date
+                            </small>
+
+                            <strong id="previewDate">
+                                October 11, 2026
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <small>
+                                Amount
+                            </small>
+
+                            <strong id="previewAmount">
+                                ₹200
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="pass-qr">
+
+
+                        <div class="fake-qr">
+
+                            <span>
+                                QR
+                            </span>
+
+                        </div>
+
+
+                        <small id="previewId">
+
+                            NVT26-DEMO
+
+                        </small>
+
+                    </div>
+
                 </div>
+
+
+
+                <!-- PASS FOOTER -->
+
+                <div class="pass-bottom">
+
+                    <span>
+                        🙏 Jai Mata Di
+                    </span>
+
+                    <span>
+                        Navratri Utsav 2026
+                    </span>
+
+                </div>
+
 
             </div>
 
-            <div class="pass-footer">
-                Navratri Utsav 2026 • New Indira Colony, Burhanpur
+
+
+            <!-- PASS BUTTONS -->
+
+            <div class="pass-actions">
+
+                <button onclick="printPass()">
+
+                    🖨 Print Pass
+
+                </button>
+
+
+                <button onclick="downloadPass()">
+
+                    ↓ Download
+
+                </button>
+
             </div>
 
         </div>
-
-        <br>
-
-        <button class="btn btn-primary"
-                onclick="window.print()"
-                style="width:100%;">
-            🖨️ Print / Save Pass
-        </button>
 
     </div>
 
 </section>
 
+
 </main>
 
 
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
 <footer>
 
-    <strong>NAVRATRI UTSAV 2026</strong>
+    <div class="footer-inner">
 
-    <br><br>
 
-    New Indira Colony, Burhanpur, Madhya Pradesh
+        <div>
 
-    <br>
+            <div class="footer-title">
 
-    <small>
-        © 2026 Navratri Utsav Committee
-    </small>
+                Navratri Utsav 2026
+
+            </div>
+
+
+            <small>
+
+                New Indira Colony,
+                Burhanpur (M.P.)
+
+            </small>
+
+        </div>
+
+
+
+        <div class="footer-mantra">
+
+            ॥ जय माता दी ॥
+
+        </div>
+
+
+
+        <div>
+
+            © 2026 Navratri Utsav Committee
+
+        </div>
+
+
+    </div>
 
 </footer>
 
 
+
 <script>
 
-/* =========================================
+
+/* =========================================================
    NAVRATRI DAYS
-   Change dates/colors here when finalized
-========================================= */
+========================================================= */
+
 
 const navratriDays = [
 
     {
         day:1,
         date:"October 11, 2026",
+        shortDate:"Oct 11, 2026",
         color:"Orange",
-        hex:"#ff7a00"
+        hex:"#e87522"
     },
 
     {
         day:2,
         date:"October 12, 2026",
+        shortDate:"Oct 12, 2026",
         color:"White",
-        hex:"#ffffff"
+        hex:"#eee9df"
     },
 
     {
         day:3,
         date:"October 13, 2026",
+        shortDate:"Oct 13, 2026",
         color:"Red",
-        hex:"#e63946"
+        hex:"#c9252d"
     },
 
     {
         day:4,
         date:"October 14, 2026",
+        shortDate:"Oct 14, 2026",
         color:"Royal Blue",
-        hex:"#4169e1"
+        hex:"#2856b8"
     },
 
     {
         day:5,
         date:"October 15, 2026",
+        shortDate:"Oct 15, 2026",
         color:"Yellow",
-        hex:"#ffd166"
+        hex:"#e8b72d"
     },
 
     {
         day:6,
         date:"October 16, 2026",
+        shortDate:"Oct 16, 2026",
         color:"Green",
-        hex:"#2e8b57"
+        hex:"#27824b"
     },
 
     {
         day:7,
         date:"October 17, 2026",
+        shortDate:"Oct 17, 2026",
         color:"Grey",
-        hex:"#808080"
+        hex:"#858585"
     },
 
     {
         day:8,
         date:"October 18, 2026",
+        shortDate:"Oct 18, 2026",
         color:"Purple",
-        hex:"#8e44ad"
+        hex:"#78439a"
     },
 
     {
         day:9,
         date:"October 19, 2026",
+        shortDate:"Oct 19, 2026",
         color:"Peacock Green",
-        hex:"#009688"
+        hex:"#168b82"
     }
 
 ];
 
 
-/* =========================================
-   CREATE DAY CARDS
-========================================= */
 
-const daysContainer =
-    document.getElementById("daysContainer");
+/* =========================================================
+   ELEMENTS
+========================================================= */
+
+
+const daysGrid =
+document.getElementById("daysGrid");
+
 
 const selectedDay =
-    document.getElementById("selectedDay");
+document.getElementById("selectedDay");
 
-navratriDays.forEach(item => {
 
-    /* Day card */
+
+/* =========================================================
+   CREATE DAY CARDS
+========================================================= */
+
+
+navratriDays.forEach(day => {
+
 
     const card =
-        document.createElement("div");
+    document.createElement("div");
 
-    card.className = "day-card";
+
+    card.className =
+    "day-card";
+
 
     card.style.setProperty(
         "--day-color",
-        item.hex
+        day.hex
     );
+
 
     card.innerHTML = `
 
-        <div class="color-circle"></div>
-
-        <div class="day-number">
-            DAY ${item.day}
+        <div
+            class="day-color"
+            style="background:${day.hex}">
         </div>
 
-        <h3>${item.color}</h3>
+        <div class="day-number">
+            DAY ${day.day}
+        </div>
 
-        <div class="date">
-            ${item.date}
+        <h3>
+            ${day.color}
+        </h3>
+
+        <div class="day-date">
+            ${day.shortDate}
         </div>
 
     `;
 
-    card.onclick = () => {
 
-        selectedDay.value = item.day;
+    card.onclick = function(){
 
-        document.getElementById("passType").value =
-            "daily";
+        selectedDay.value =
+        day.day;
 
-        updateBooking();
 
-        scrollToSection("booking");
+        document.querySelector(
+            'input[value="daily"]'
+        ).checked = true;
+
+
+        updateForm();
+
+
+        goToBooking();
 
     };
 
-    daysContainer.appendChild(card);
+
+    daysGrid.appendChild(card);
 
 
-    /* Dropdown */
 
     const option =
-        document.createElement("option");
+    document.createElement("option");
 
-    option.value = item.day;
+
+    option.value =
+    day.day;
+
 
     option.textContent =
-        `Day ${item.day} — ${item.color} — ${item.date}`;
+    `Day ${day.day} — ${day.color} — ${day.shortDate}`;
+
 
     selectedDay.appendChild(option);
 
 });
 
 
-/* =========================================
-   PASS TYPE
-========================================= */
 
-function selectPass(type){
+/* =========================================================
+   NAVIGATION
+========================================================= */
 
-    document.getElementById("passType").value =
-        type;
 
-    updateBooking();
-
-    scrollToSection("booking");
-}
-
-
-function updateBooking(){
-
-    const type =
-        document.getElementById("passType").value;
-
-    const daySelection =
-        document.getElementById("daySelection");
-
-    const total =
-        document.getElementById("totalAmount");
-
-
-    if(type === "daily"){
-
-        daySelection.style.display = "block";
-
-        total.textContent = "₹200";
-
-    }else{
-
-        daySelection.style.display = "none";
-
-        total.textContent = "₹1,000";
-
-    }
-
-}
-
-
-/* =========================================
-   GENERATE PASS
-========================================= */
-
-document
-.getElementById("passForm")
-.addEventListener("submit",function(e){
-
-    e.preventDefault();
-
-
-    const name =
-        document.getElementById("name")
-        .value.trim();
-
-    const phone =
-        document.getElementById("phone")
-        .value.trim();
-
-    const type =
-        document.getElementById("passType")
-        .value;
-
-
-    if(phone.length !== 10 ||
-       !/^[0-9]+$/.test(phone)){
-
-        alert("Please enter a valid 10-digit phone number.");
-
-        return;
-    }
-
-
-    let selected;
-
-    if(type === "daily"){
-
-        const day =
-            Number(
-                document.getElementById("selectedDay")
-                .value
-            );
-
-        selected =
-            navratriDays.find(
-                d => d.day === day
-            );
-
-    }else{
-
-        /* 9-day pass uses Day 1 theme
-           as the default pass color */
-
-        selected = navratriDays[0];
-
-    }
-
-
-    /* Generate ID */
-
-    const random =
-        Math.floor(
-            100000 + Math.random() * 900000
-        );
-
-    const passId =
-        `NVT26-${random}`;
-
-
-    /* Fill pass */
-
-    document.getElementById("passId")
-        .textContent = passId;
-
-    document.getElementById("passName")
-        .textContent = name;
-
-    document.getElementById("passPhone")
-        .textContent = phone;
-
-    document.getElementById("passTypeDisplay")
-        .textContent =
-        type === "daily"
-        ? "Daily Pass"
-        : "9-Day Pass";
-
-
-    if(type === "daily"){
-
-        document.getElementById("passDay")
-            .textContent =
-            `Day ${selected.day}`;
-
-        document.getElementById("passDate")
-            .textContent =
-            selected.date;
-
-        document.getElementById("passColor")
-            .textContent =
-            selected.color;
-
-    }else{
-
-        document.getElementById("passDay")
-            .textContent =
-            "Day 1 – Day 9";
-
-        document.getElementById("passDate")
-            .textContent =
-            "All 9 Days";
-
-        document.getElementById("passColor")
-            .textContent =
-            "9-Day Pass";
-
-    }
-
-
-    /* Apply selected day color */
-
-    const pass =
-        document.getElementById("generatedPass");
-
-    const header =
-        document.getElementById("passHeader");
-
-
-    header.style.background =
-        selected.hex;
-
-
-    pass.style.background =
-        selected.hex;
-
-
-    /* Make white background readable */
-
-    if(selected.color === "White"){
-
-        header.style.color = "#222";
-
-    }else{
-
-        header.style.color = "#fff";
-
-    }
-
-
-    /* Show result */
-
-    const result =
-        document.getElementById("passResult");
-
-    result.style.display = "block";
-
-    result.scrollIntoView({
-        behavior:"smooth"
-    });
-
-});
-
-
-/* =========================================
-   SCROLL
-========================================= */
-
-function scrollToSection(id){
+function goToBooking(){
 
     document
-    .getElementById(id)
+    .getElementById("booking")
     .scrollIntoView({
         behavior:"smooth"
     });
@@ -1224,42 +3289,558 @@ function scrollToSection(id){
 }
 
 
-/* =========================================
-   PARTICLES
-========================================= */
+function toggleMenu(){
 
-const particles =
-    document.getElementById("particles");
-
-for(let i=0;i<35;i++){
-
-    const p =
-        document.createElement("div");
-
-    p.className = "particle";
-
-    p.style.left =
-        Math.random()*100 + "%";
-
-    p.style.top =
-        Math.random()*100 + "%";
-
-    p.style.animationDelay =
-        Math.random()*8 + "s";
-
-    p.style.animationDuration =
-        (5 + Math.random()*7) + "s";
-
-    particles.appendChild(p);
+    document
+    .getElementById("mobileNav")
+    .classList.toggle("active");
 
 }
 
 
-/* Initial state */
 
-updateBooking();
+/* =========================================================
+   PASS SELECTION
+========================================================= */
+
+
+function chooseDailyPass(){
+
+    document.querySelector(
+        'input[value="daily"]'
+    ).checked = true;
+
+
+    updateForm();
+
+
+    goToBooking();
+
+}
+
+
+function chooseNineDayPass(){
+
+    document.querySelector(
+        'input[value="nine"]'
+    ).checked = true;
+
+
+    updateForm();
+
+
+    goToBooking();
+
+}
+
+
+
+/* =========================================================
+   GET PASS TYPE
+========================================================= */
+
+
+function getPassType(){
+
+    return document.querySelector(
+        'input[name="passType"]:checked'
+    ).value;
+
+}
+
+
+
+/* =========================================================
+   FORM UPDATE
+========================================================= */
+
+
+function updateForm(){
+
+    const type =
+    getPassType();
+
+
+    const dayField =
+    document.getElementById("dayField");
+
+
+    const amount =
+    document.getElementById("totalAmount");
+
+
+    if(type === "daily"){
+
+        dayField.style.display =
+        "block";
+
+
+        amount.textContent =
+        "₹200";
+
+    }
+
+    else{
+
+        dayField.style.display =
+        "none";
+
+
+        amount.textContent =
+        "₹1,000";
+
+    }
+
+
+    updateLivePreview();
+
+}
+
+
+
+/* =========================================================
+   LIVE PREVIEW
+========================================================= */
+
+
+document
+.getElementById("name")
+.addEventListener(
+    "input",
+    function(){
+
+        document
+        .getElementById("previewName")
+        .textContent =
+        this.value ||
+        "Your Name";
+
+    }
+);
+
+
+document
+.getElementById("phone")
+.addEventListener(
+    "input",
+    function(){
+
+        document
+        .getElementById("previewPhone")
+        .textContent =
+        this.value ||
+        "9876543210";
+
+    }
+);
+
+
+selectedDay.addEventListener(
+    "change",
+    updateLivePreview
+);
+
+
+document
+.querySelectorAll(
+    'input[name="passType"]'
+)
+.forEach(input => {
+
+    input.addEventListener(
+        "change",
+        updateLivePreview
+    );
+
+});
+
+
+
+function updateLivePreview(){
+
+    const type =
+    getPassType();
+
+
+    if(type === "nine"){
+
+        document
+        .getElementById("previewType")
+        .textContent =
+        "9-Day Pass";
+
+
+        document
+        .getElementById("previewDay")
+        .textContent =
+        "Day 1 – Day 9";
+
+
+        document
+        .getElementById("previewDate")
+        .textContent =
+        "All 9 Days";
+
+
+        document
+        .getElementById("previewAmount")
+        .textContent =
+        "₹1,000";
+
+
+        setPassColor(
+            navratriDays[0].hex
+        );
+
+
+        return;
+
+    }
+
+
+    const day =
+    navratriDays.find(
+        d =>
+        d.day ===
+        Number(selectedDay.value)
+    );
+
+
+    if(!day) return;
+
+
+    document
+    .getElementById("previewType")
+    .textContent =
+    "Daily Pass";
+
+
+    document
+    .getElementById("previewDay")
+    .textContent =
+    `Day ${day.day} - ${day.color}`;
+
+
+    document
+    .getElementById("previewDate")
+    .textContent =
+    day.date;
+
+
+    document
+    .getElementById("previewAmount")
+    .textContent =
+    "₹200";
+
+
+    setPassColor(day.hex);
+
+}
+
+
+
+/* =========================================================
+   CHANGE PASS COLOR
+========================================================= */
+
+
+function setPassColor(color){
+
+    const passTop =
+    document.getElementById("passTop");
+
+
+    passTop.style.background =
+    color;
+
+
+    /*
+       Make light colors easier to read.
+    */
+
+    if(
+        color === "#eee9df" ||
+        color === "#e8b72d"
+    ){
+
+        passTop.style.color =
+        "#351010";
+
+    }
+
+    else{
+
+        passTop.style.color =
+        "white";
+
+    }
+
+}
+
+
+
+/* =========================================================
+   GENERATE PASS
+========================================================= */
+
+
+document
+.getElementById("passForm")
+.addEventListener(
+    "submit",
+    function(event){
+
+        event.preventDefault();
+
+
+        const name =
+        document
+        .getElementById("name")
+        .value
+        .trim();
+
+
+        const phone =
+        document
+        .getElementById("phone")
+        .value
+        .trim();
+
+
+        if(!name){
+
+            alert(
+                "Please enter your full name."
+            );
+
+            return;
+
+        }
+
+
+        if(
+            !/^[0-9]{10}$/.test(phone)
+        ){
+
+            alert(
+                "Please enter a valid 10-digit mobile number."
+            );
+
+            return;
+
+        }
+
+
+        const type =
+        getPassType();
+
+
+        let day =
+        navratriDays[0];
+
+
+        if(type === "daily"){
+
+            day =
+            navratriDays.find(
+                d =>
+                d.day ===
+                Number(
+                    selectedDay.value
+                )
+            );
+
+        }
+
+
+        /*
+           UNIQUE PASS ID
+        */
+
+        const random =
+        Math.floor(
+            100000 +
+            Math.random() * 900000
+        );
+
+
+        const passId =
+        `NVT26-${random}`;
+
+
+        /*
+           UPDATE NAME
+        */
+
+        document
+        .getElementById("previewName")
+        .textContent =
+        name;
+
+
+        /*
+           UPDATE PHONE
+        */
+
+        document
+        .getElementById("previewPhone")
+        .textContent =
+        phone;
+
+
+        /*
+           UPDATE PASS ID
+        */
+
+        document
+        .getElementById("previewId")
+        .textContent =
+        passId;
+
+
+        /*
+           DAILY PASS
+        */
+
+        if(type === "daily"){
+
+            document
+            .getElementById("previewType")
+            .textContent =
+            "Daily Pass";
+
+
+            document
+            .getElementById("previewDay")
+            .textContent =
+            `Day ${day.day} - ${day.color}`;
+
+
+            document
+            .getElementById("previewDate")
+            .textContent =
+            day.date;
+
+
+            document
+            .getElementById("previewAmount")
+            .textContent =
+            "₹200";
+
+
+            setPassColor(
+                day.hex
+            );
+
+        }
+
+
+        /*
+           9 DAY PASS
+        */
+
+        else{
+
+            document
+            .getElementById("previewType")
+            .textContent =
+            "9-Day Pass";
+
+
+            document
+            .getElementById("previewDay")
+            .textContent =
+            "Day 1 – Day 9";
+
+
+            document
+            .getElementById("previewDate")
+            .textContent =
+            "All 9 Days";
+
+
+            document
+            .getElementById("previewAmount")
+            .textContent =
+            "₹1,000";
+
+
+            setPassColor(
+                navratriDays[0].hex
+            );
+
+        }
+
+
+        /*
+           SCROLL TO PASS
+        */
+
+        document
+        .getElementById("digitalPass")
+        .scrollIntoView({
+            behavior:"smooth",
+            block:"center"
+        });
+
+
+        setTimeout(
+            function(){
+
+                alert(
+                    "Pass generated successfully!\\n\\n" +
+                    "Pass ID: " +
+                    passId
+                );
+
+            },
+            500
+        );
+
+    }
+);
+
+
+
+/* =========================================================
+   PRINT PASS
+========================================================= */
+
+
+function printPass(){
+
+    window.print();
+
+}
+
+
+
+/* =========================================================
+   DOWNLOAD
+========================================================= */
+
+
+function downloadPass(){
+
+    alert(
+        "PDF download will be connected in the production version."
+    );
+
+}
+
+
+
+/* =========================================================
+   INITIALIZE
+========================================================= */
+
+
+updateForm();
+
 
 </script>
 
+
 </body>
+
 </html>
